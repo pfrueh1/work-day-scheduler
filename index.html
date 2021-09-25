@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/open-iconic/1.1.1/font/css/open-iconic-bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Work Day Scheduler</title>
+  </head>
+
+  <body>
+    <header class="jumbotron">
+      <h1 class="display-3">Work Day Scheduler</h1>
+      <p class="lead">A simple calendar app for scheduling your work day</p>
+      <p id="currentDay" class="lead"></p>
+    </header>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-2    bg-light    " >
+          <span class="hour    bg-light nine h3"></span>
+         
+        </div>
+        <div class="col-lg-8 task text-dark" id="task">
+          <span class= "hourlyEvent" id="hour9event">Insert text here</span>
+        </div>
+        <div class="col-lg-2  ">
+          <button class="saveBtn badge text-center " onclick="save('hour9event')">
+            <span class="oi oi-document h1"></span>
+          </button>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-2    bg-light    " >
+          <span class="hour    bg-light ten h3"></span>
+         
+        </div>
+        <div class="col-lg-8 task text-dark" id="task">
+          <span class= "hourlyEvent" id="hour10event">Insert text here</span>
+        </div>
+        <div class="col-lg-2  ">
+          <button class="saveBtn badge text-center " onclick="save('hour10event')">
+            <span class="oi oi-document h1"></span>
+          </button>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-2    bg-light    " >
+          <span class="hour    bg-light eleven h3"></span>
+         
+        </div>
+        <div class="col-lg-8 task text-dark" id="task">
+          <span class= "hourlyEvent" id="hour11event">Insert text here</span>
+        </div>
+        <div class="col-lg-2  ">
+          <button class="saveBtn badge text-center " onclick="save('hour11event')">
+            <span class="oi oi-document h1"></span>
+          </button>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-2    bg-light    " >
+          <span class="hour    bg-light twelve h3"></span>
+         
+        </div>
+        <div class="col-lg-8 task text-dark" id="task">
+          <span class= "hourlyEvent" id="hour12event">Insert text here</span>
+        </div>
+        <div class="col-lg-2  ">
+          <button class="saveBtn badge text-center " onclick="save('hour12event')">
+            <span class="oi oi-document h1"></span>
+          </button>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-2    bg-light    " >
+          <span class="hour    bg-light one h3"></span>
+         
+        </div>
+        <div class="col-lg-8 task text-dark" id="task">
+          <span class= "hourlyEvent" id="hour1event">Insert text here</span>
+        </div>
+        <div class="col-lg-2  ">
+          <button class="saveBtn badge text-center " onclick="save('hour1event')">
+            <span class="oi oi-document h1"></span>
+          </button>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-2    bg-light    " >
+          <span class="hour    bg-light two h3"></span>
+         
+        </div>
+        <div class="col-lg-8 task text-dark" id="task">
+          <span class= "hourlyEvent" id="hour2event">Insert text here</span>
+        </div>
+        <div class="col-lg-2  ">
+          <button class="saveBtn badge text-center " onclick="save('hour2event')">
+            <span class="oi oi-document h1"></span>
+          </button>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-2    bg-light    " >
+          <span class="hour    bg-light three h3"></span>
+         
+        </div>
+        <div class="col-lg-8 task text-dark" id="task">
+          <span class= "hourlyEvent" id="hour3event">Insert text here</span>
+        </div>
+        <div class="col-lg-2 ">
+          <button class="saveBtn badge text-center " onclick="save('hour3event')">
+            <span class="oi oi-document h1"></span>
+          </button>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-2    bg-light hour9" >
+          <span class="hour    bg-light four h3"></span>
+         
+        </div>
+        <div class="col-lg-8 task text-dark" id="task">
+          <span class= "hourlyEvent" id="hour4event">Insert text here</span>
+        </div>
+        <div class="col-lg-2  ">
+          <button class="saveBtn badge text-center " onclick="save('hour4event')">
+            <span class="oi oi-document h1"></span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
